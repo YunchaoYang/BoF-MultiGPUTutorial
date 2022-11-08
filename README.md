@@ -1,6 +1,12 @@
-# distributed-pytorch
+# BoF-MultiGPUTutorial
 
-Code for the DDP tutorial series at https://pytorch.org/tutorials/beginner/ddp_series_intro.html
+slides:https://github.com/YunchaoYang/BoF-MultiGPUTutorial/FundamentalOfMulgiGPUTraining.pdf
+
+code: https://github.com/YunchaoYang/BoF-MultiGPUTutorial
+
+
+# code is adapted from pytorch distributed-pytorch
+code for the DDP tutorial series at https://pytorch.org/tutorials/beginner/ddp_series_intro.html
 
 Each code file extends upon the previous one. The series starts with a non-distributed script that runs on a single GPU and incrementally updates to end with multinode training on a Slurm cluster.
 
@@ -19,4 +25,4 @@ Each code file extends upon the previous one. The series starts with a non-distr
 
 
 
-# BoF-MultiGPUTutorial
+
