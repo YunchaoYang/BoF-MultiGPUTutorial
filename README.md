@@ -1,9 +1,8 @@
 # BoF-MultiGPUTutorial
 
-slides:https://github.com/YunchaoYang/BoF-MultiGPUTutorial/FundamentalOfMulgiGPUTraining.pdf
+slides: https://github.com/YunchaoYang/BoF-MultiGPUTutorial/FundamentalOfMultiGPUTraining.pdf
 
 code: https://github.com/YunchaoYang/BoF-MultiGPUTutorial
-
 
 # code is adapted from pytorch distributed-pytorch
 code for the DDP tutorial series at https://pytorch.org/tutorials/beginner/ddp_series_intro.html
