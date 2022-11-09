@@ -2,26 +2,29 @@
 
 # Fundamentals of Accelerated Neural Network Training with Multi-GPUs on HiPerGator-AI
 
-AI support team
-UF Research Computing
+- AI support team
+- UF Research Computing
 
-[slides]FundamentalOfMultiGPUTraining.pdf]
+[slides](FundamentalOfMultiGPUTraining.pdf)
 
 [GitHub repo](https://github.com/YunchaoYang/BoF-MultiGPUTutorial)
 
-# code is adapted from pytorch distributed-pytorch
-code for the DDP tutorial series at https://pytorch.org/tutorials/beginner/ddp_series_intro.html
+Code is adapted for the DDP tutorial series at https://pytorch.org/tutorials/beginner/ddp_series_intro.html
 
 Each code file extends upon the previous one. The series starts with a non-distributed script that runs on a single GPU and incrementally updates to end with multinode training on a Slurm cluster.
 
-
 ## Files
+
+Step 1
 * [single_gpu.py](single_gpu.py): Non-distributed training script on a single GPU
 
+Step 2.1
 * [multigpu.py](multigpu.py): DDP on a single node
 
+Step 2.2
 * [multigpu_torchrun.py](multigpu.py): DDP on a single node using Torchrun
 
+Step 3
 * [multinode.py](multigpu.py): DDP on multiple nodes using Torchrun (and optionally Slurm)
     * [slurm/setup_pcluster_slurm.md](slurm/setup_pcluster_slurm.md): instructions to set up an AWS cluster
     * [slurm/config.yaml.template](slurm/config.yaml.template): configuration to set up an AWS cluster
