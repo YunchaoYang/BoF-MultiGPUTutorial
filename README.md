@@ -1,4 +1,4 @@
-![Bird-of-Feather Workshop](BoF-workshop.png)
+<img src="BoF-workshop.png" alt="drawing" width="200"/>
 
 # Fundamentals of Accelerated Neural Network Training with Multi-GPUs on HiPerGator-AI
 
@@ -26,11 +26,13 @@ Step 2.2
 
 Step 3
 * [multinode.py](multigpu.py): DDP on multiple nodes using Torchrun (and optionally Slurm)
-    * [slurm/setup_pcluster_slurm.md](slurm/setup_pcluster_slurm.md): instructions to set up an AWS cluster
-    * [slurm/config.yaml.template](slurm/config.yaml.template): configuration to set up an AWS cluster
-    * [slurm/sbatch_run.sh](slurm/sbatch_run.sh): slurm script to launch the training job
 
 
+Step 4. Run SLURM jobs on HPG
+    * [slurm/multigpu_torchrun.py](slurm/multigpu_torchrun.py): training script for multiGPU
+    * [slurm/datautils.py](slurm/datautils.py): Dataset helper function 
+    * [slurm/launch_ddp_2N4G.sh](slurm/launch_ddp_2N4G.sh): Sample slurm script to launch a trining script using torchrun on 2Nodes with 2GPUs no each node.
+    * [slurm/launch_ddp_4N4G.sh](slurm/launch_ddp_4N4G.sh): Sample slurm script to launch a trining script using torchrun on 4Nodes with 1GPUs no each node.
 
 
 
