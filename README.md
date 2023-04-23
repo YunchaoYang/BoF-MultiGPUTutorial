@@ -1,4 +1,4 @@
-<img src="BoF-workshop.png" alt="drawing" width="400"/>
+<img src="./img/BoF-workshop.png" alt="drawing" width="400"/>
 
 # Fundamentals of Accelerated Neural Network Training with Multi-GPUs on HiPerGator-AI
 
