@@ -1,0 +1,295 @@
+Node list c1100a-s17
+HeadNodeIP: 172.16.205.43
+/home/hityangsir/parallel/BoF-MultiGPUTutorial/slurm
+c1100a-s17.ufhpc
+Tue Feb 14 15:16:39 EST 2023
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+INFO:torch.distributed.launcher.api:Starting elastic_operator with launch configs:
+  entrypoint       : multigpu_torchrun.py
+  min_nodes        : 2
+  max_nodes        : 2
+  nproc_per_node   : 2
+  run_id           : 8524
+  rdzv_backend     : c10d
+  rdzv_endpoint    : 172.16.205.43:29500
+  rdzv_configs     : {'timeout': 900}
+  max_restarts     : 0
+  monitor_interval : 5
+  log_dir          : None
+  metrics_cfg      : {}
+
+INFO:torch.distributed.elastic.agent.server.local_elastic_agent:log directory set to: /scratch/local/57171912/torchelastic_yxvka1e1/8524_nnlo6b2g
+INFO:torch.distributed.elastic.agent.server.api:[default] starting workers for entrypoint: python
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous'ing worker group
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+INFO:torch.distributed.launcher.api:Starting elastic_operator with launch configs:
+  entrypoint       : multigpu_torchrun.py
+  min_nodes        : 2
+  max_nodes        : 2
+  nproc_per_node   : 2
+  run_id           : 8524
+  rdzv_backend     : c10d
+  rdzv_endpoint    : 172.16.205.43:29500
+  rdzv_configs     : {'timeout': 900}
+  max_restarts     : 0
+  monitor_interval : 5
+  log_dir          : None
+  metrics_cfg      : {}
+
+INFO:torch.distributed.elastic.agent.server.local_elastic_agent:log directory set to: /scratch/local/57171912/torchelastic_kpj9z1uz/8524_czkvbm_2
+INFO:torch.distributed.elastic.agent.server.api:[default] starting workers for entrypoint: python
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous'ing worker group
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous complete for workers. Result:
+  restart_count=0
+  master_addr=c1100a-s17.ufhpc
+  master_port=58897
+  group_rank=0
+  group_world_size=2
+  local_ranks=[0, 1]
+  role_ranks=[0, 1]
+  global_ranks=[0, 1]
+  role_world_sizes=[4, 4]
+  global_world_sizes=[4, 4]
+
+INFO:torch.distributed.elastic.agent.server.api:[default] Starting worker group
+INFO:torch.distributed.elastic.agent.server.local_elastic_agent:Environment variable 'TORCHELASTIC_ENABLE_FILE_TIMER' not found. Do not start FileTimerServer.
+INFO:torch.distributed.elastic.multiprocessing:Setting worker0 reply file to: /scratch/local/57171912/torchelastic_yxvka1e1/8524_nnlo6b2g/attempt_0/0/error.json
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous complete for workers. Result:
+  restart_count=0
+  master_addr=c1100a-s17.ufhpc
+  master_port=58897
+  group_rank=1
+  group_world_size=2
+  local_ranks=[0, 1]
+  role_ranks=[2, 3]
+  global_ranks=[2, 3]
+  role_world_sizes=[4, 4]
+  global_world_sizes=[4, 4]
+
+INFO:torch.distributed.elastic.multiprocessing:Setting worker1 reply file to: /scratch/local/57171912/torchelastic_yxvka1e1/8524_nnlo6b2g/attempt_0/1/error.json
+INFO:torch.distributed.elastic.agent.server.api:[default] Starting worker group
+INFO:torch.distributed.elastic.agent.server.local_elastic_agent:Environment variable 'TORCHELASTIC_ENABLE_FILE_TIMER' not found. Do not start FileTimerServer.
+INFO:torch.distributed.elastic.multiprocessing:Setting worker0 reply file to: /scratch/local/57171912/torchelastic_kpj9z1uz/8524_czkvbm_2/attempt_0/0/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker1 reply file to: /scratch/local/57171912/torchelastic_kpj9z1uz/8524_czkvbm_2/attempt_0/1/error.json
+[RANK0: local GPU0] Epoch 0 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 0 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 0 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 0 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 1 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 1 | Batchsize: 32 | Steps: 16
+Epoch 0 | Training snapshot saved at snapshot.pt
+[RANK2: local GPU0] Epoch 1 | Batchsize: 32 | Steps: 16
+Epoch 0 | Training snapshot saved at snapshot.pt
+[RANK0: local GPU0] Epoch 1 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 2 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 2 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 2 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 2 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 3 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 3 | Batchsize: 32 | Steps: 16[RANK3: local GPU1] Epoch 3 | Batchsize: 32 | Steps: 16
+
+[RANK1: local GPU1] Epoch 3 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 4 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 4 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 4 | Batchsize: 32 | Steps: 16[RANK3: local GPU1] Epoch 4 | Batchsize: 32 | Steps: 16
+
+[RANK0: local GPU0] Epoch 5 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 5 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 5 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 5 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 6 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 6 | Batchsize: 32 | Steps: 16[RANK2: local GPU0] Epoch 6 | Batchsize: 32 | Steps: 16
+
+[RANK0: local GPU0] Epoch 6 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 7 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 7 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 7 | Batchsize: 32 | Steps: 16[RANK2: local GPU0] Epoch 7 | Batchsize: 32 | Steps: 16
+
+[RANK1: local GPU1] Epoch 8 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 8 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 8 | Batchsize: 32 | Steps: 16[RANK2: local GPU0] Epoch 8 | Batchsize: 32 | Steps: 16
+
+[RANK1: local GPU1] Epoch 9 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 9 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 9 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 9 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 10 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 10 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 10 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 10 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 11 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 11 | Batchsize: 32 | Steps: 16
+Epoch 10 | Training snapshot saved at snapshot.pt
+[RANK2: local GPU0] Epoch 11 | Batchsize: 32 | Steps: 16
+Epoch 10 | Training snapshot saved at snapshot.pt
+[RANK0: local GPU0] Epoch 11 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 12 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 12 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 12 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 12 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 13 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 13 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 13 | Batchsize: 32 | Steps: 16[RANK2: local GPU0] Epoch 13 | Batchsize: 32 | Steps: 16
+
+[RANK1: local GPU1] Epoch 14 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 14 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 14 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 14 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 15 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 15 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 15 | Batchsize: 32 | Steps: 16[RANK2: local GPU0] Epoch 15 | Batchsize: 32 | Steps: 16
+
+[RANK1: local GPU1] Epoch 16 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 16 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 16 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 16 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 17 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 17 | Batchsize: 32 | Steps: 16[RANK3: local GPU1] Epoch 17 | Batchsize: 32 | Steps: 16
+
+[RANK0: local GPU0] Epoch 17 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 18 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 18 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 18 | Batchsize: 32 | Steps: 16[RANK3: local GPU1] Epoch 18 | Batchsize: 32 | Steps: 16
+
+[RANK1: local GPU1] Epoch 19 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 19 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 19 | Batchsize: 32 | Steps: 16[RANK3: local GPU1] Epoch 19 | Batchsize: 32 | Steps: 16
+
+[RANK1: local GPU1] Epoch 20 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 20 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 20 | Batchsize: 32 | Steps: 16[RANK2: local GPU0] Epoch 20 | Batchsize: 32 | Steps: 16
+
+[RANK1: local GPU1] Epoch 21 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 21 | Batchsize: 32 | Steps: 16
+Epoch 20 | Training snapshot saved at snapshot.pt
+[RANK0: local GPU0] Epoch 21 | Batchsize: 32 | Steps: 16
+Epoch 20 | Training snapshot saved at snapshot.pt
+[RANK2: local GPU0] Epoch 21 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 22 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 22 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 22 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 22 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 23 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 23 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 23 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 23 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 24 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 24 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 24 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 24 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 25 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 25 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 25 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 25 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 26 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 26 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 26 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 26 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 27 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 27 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 27 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 27 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 28 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 28 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 28 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 28 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 29 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 29 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 29 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 29 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 30 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 30 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 30 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 30 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 31 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 31 | Batchsize: 32 | Steps: 16
+Epoch 30 | Training snapshot saved at snapshot.pt
+[RANK2: local GPU0] Epoch 31 | Batchsize: 32 | Steps: 16
+Epoch 30 | Training snapshot saved at snapshot.pt
+[RANK0: local GPU0] Epoch 31 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 32 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 32 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 32 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 32 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 33 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 33 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 33 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 33 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 34 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 34 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 34 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 34 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 35 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 35 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 35 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 35 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 36 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 36 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 36 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 36 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 37 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 37 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 37 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 37 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 38 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 38 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 38 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 38 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 39 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 39 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 39 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 39 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 40 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 40 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 40 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 40 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 41 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 41 | Batchsize: 32 | Steps: 16
+Epoch 40 | Training snapshot saved at snapshot.pt
+[RANK0: local GPU0] Epoch 41 | Batchsize: 32 | Steps: 16
+Epoch 40 | Training snapshot saved at snapshot.pt
+[RANK2: local GPU0] Epoch 41 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 42 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 42 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 42 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 42 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 43 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 43 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 43 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 43 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 44 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 44 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 44 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 44 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 45 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 45 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 45 | Batchsize: 32 | Steps: 16[RANK3: local GPU1] Epoch 45 | Batchsize: 32 | Steps: 16
+
+[RANK1: local GPU1] Epoch 46 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 46 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 46 | Batchsize: 32 | Steps: 16[RANK2: local GPU0] Epoch 46 | Batchsize: 32 | Steps: 16
+
+[RANK1: local GPU1] Epoch 47 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 47 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 47 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 47 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 48 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 48 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 48 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 48 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 49 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 49 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 49 | Batchsize: 32 | Steps: 16[RANK2: local GPU0] Epoch 49 | Batchsize: 32 | Steps: 16
+
+INFO:torch.distributed.elastic.agent.server.api:[default] worker group successfully finished. Waiting 300 seconds for other agents to finish.
+INFO:torch.distributed.elastic.agent.server.api:Local worker group finished (SUCCEEDED). Waiting 300 seconds for other agents to finish
+INFO:torch.distributed.elastic.agent.server.api:[default] worker group successfully finished. Waiting 300 seconds for other agents to finish.
+INFO:torch.distributed.elastic.agent.server.api:Local worker group finished (SUCCEEDED). Waiting 300 seconds for other agents to finish
+INFO:torch.distributed.elastic.agent.server.api:Done waiting for other agents. Elapsed: 0.0005931854248046875 seconds
+INFO:torch.distributed.elastic.agent.server.api:Done waiting for other agents. Elapsed: 0.08261322975158691 seconds
